@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kitsu | Terminou sua Busca</title>
+    <link href="./assets/css/normalize.css" rel="stylesheet">
+    <link href="./assets/css/reset.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <link href="./assets/css/destaques.css" rel="stylesheet">
+    <link href="./assets/css/populares.css" rel="stylesheet">
+    <link href="./assets/css/menu.css" rel="stylesheet">
+    <link href="./assets/css/responsivo.css" rel="stylesheet">
+    <link href="./assets/css/search.css" rel="stylesheet">
+</head>
+<body class="app">
+    <header class="cabecalho">
+
+        <!-- <div style="padding: 10px; margin: 10px;">
+            Busca Kitsu
+            <input type="text" placeholder="busca" value="" style="padding: 6px;">
+            <input type="button" onclick="myFunction()" value="Buscar" style="padding: 6px;">            
+        </div> -->
+        
+        <section style="padding: 10px; margin: 10px;">
+            <form autocomplete="off" action="/">Busca Kitsu
+                <div class="autocomplete" style="width:300px;">
+                  <input id="myInput" type="text" name="myCountry" placeholder="Character">
+                  <input type="submit" value="Busca" class="search-btn">
+                <button type="submit" class="autocomplete-active search-btn"><i class="fa fa-search"></i></button>
+                </div>                
+              </form>
+              
+        </section>
+        <nav class="menu">
+            
+            <ul class="menu__lista">
+                <li class="menu__item">
+                    <a class="menu__link ativo" href="#">
+                        <i class="fas fa-home"></i>
+                        Início
+                    </a>
+                    <a class="menu__link" href="#">
+                        <i class="fas fa-mobile-alt"></i>
+                        Comics</a>
+                    <a class="menu__link" href="#">
+                        <i class="fas fa-gamepad"></i>
+                        Studios
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+
+        
+
+        <section class="destaques">
+            <div class="destaques__principal caixa">
+                <h3 class="destaques__titulo">Filme em Destaque</h3>
+            </div>
+            <div class="destaques__secundario caixa">
+                <h3 class="destaques__titulo">Filme do mês</h3>
+            </div>
+            <div class="destaques__secundario caixa">
+                <h3 class="destaques__titulo">Filme da semana</h3>
+            </div>
+            <div class="destaques__secundario caixa">
+                <h3 class="destaques__titulo">Próximos</h3>
+            </div>
+            <!-- <div class="destaques__secundario caixa">
+                <h3 class="destaques__titulo">Marvel</h3>
+            </div> -->
+            <div class="destaques__categorias">
+                <ul class="destaques__categorias___lista">
+                    <li class="destaques__categorias___item">
+                        <a class="destaques__categorias___link" href="#">
+                            <i class="destaques__categorias___icone fab fa-buromobelexperte"></i>
+                            Jogos da Marvel
+                        </a>
+                    </li>
+                    <li class="destaques__categorias___item">
+                        <a class="destaques__categorias___link" href="#">
+                            <i class="fas fa-list-ol"></i>
+                            Filmes da Marvel
+                        </a>
+                    </li>
+                    <li class="destaques__categorias___item">
+                        <a class="destaques__categorias___link" href="#">
+                            <i class="far fa-star"></i>
+                            Os destaques da Marvel
+                        </a>
+                    </li>
+                    <li class="destaques__categorias___item">
+                        <a class="destaques__categorias___link" href="#">
+                            <i class="far fa-bell"></i>
+                            Próximos Lançamentos
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="populares">
+            <div class="populares__itens">
+                <div class="populares__info">
+                    <div class="populares__cabecalho">
+                        <h4 class="populares__titulo">
+                            <i class="populares__icone fab fa-buromobelexperte"></i>
+                            Aplicativos Marvel
+                        </h4>
+                        <button class="populares__botao">
+                            <i class="fas fa-th"></i>
+                            Todos Personagens
+                        </button>
+                    </div>
+                </div>
+                <div class="populares__conteudo">
+                    <div class="populares__card">
+                        <img class="populares__card___imagem" src="https://i.annihil.us/u/prod/marvel/i/mg/2/60/537bcaef0f6cf/standard_xlarge.jpg"></img>
+                        <div class="populares__card___corpo">
+                            <div class="populares__card___cabecalho">
+                                <h5 class="populares__card___titulo">Wolverine</h5>
+                                <time class="populares__card___data" datetime="2013-08-01">08/2013</time>
+                            </div>
+                            <div class="populares__card___descricao">
+                                Marvel é uma série baseado em  quadrinhos da década de 40 nos Estados Unidos.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="populares__card">
+                        <img class="populares__card___imagem" src="https://comicvine1.cbsistatic.com/uploads/scale_small/12/124259/7025229-rco022_1564570505.jpg"></img>
+                        <div class="populares__card___corpo">
+                            <div class="populares__card___cabecalho">
+                                <h5 class="populares__card___titulo">America Capitain</h5>
+                                <time class="populares__card___data" datetime="20090-01-01">2009</time>
+                            </div>
+                            <div class="populares__card___descricao">
+                                Marvel é uma série baseado em  quadrinhos da década de 40 nos Estados Unidos.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="populares__card">
+                        <img class="populares__card___imagem" src="https://comicvine1.cbsistatic.com/uploads/scale_small/12/124259/7222051-801294._sx1280_ql80_ttd_.jpg"></img>
+                        <div class="populares__card___corpo">
+                            <div class="populares__card___cabecalho">
+                                <h5 class="populares__card___titulo">Ciclops</h5>
+                                <time class="populares__card___data" datetime="2013-08-14">14/08/2013</time>
+                            </div>
+                            <div class="populares__card___descricao">
+                                Marvel é uma série baseado em  quadrinhos da década de 40 nos Estados Unidos.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="populares__card">
+                        <img class="populares__card___imagem" src="https://cdn.vox-cdn.com/thumbor/ud2Ba2OLfCn0ffL_JEO6resI06s=/0x0:1280x720/1200x800/filters:focal(499x52:703x256)/cdn.vox-cdn.com/uploads/chorus_image/image/64768896/2019071515204800_EEF8E9558A0946A299305EE281E121B4.0.jpg"></img>
+                        <div class="populares__card___corpo">
+                            <div class="populares__card___cabecalho">
+                                <h5 class="populares__card___titulo">Iron Man</h5>
+                                <time class="populares__card___data" datetime="2011-01-01">2011</time>
+                            </div>
+                            <div class="populares__card___descricao">
+                                Marvel Heroes foi um MMORPG que foi criado pela Marvel Comics em parceria com a Gazillion Entertainment. Antes, estava sendo elaborado pela Marvel Comics em parceria com a Cryptic Studios.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="populares__card">
+                        <img class="populares__card___imagem" src="https://comicvine1.cbsistatic.com/uploads/scale_small/3/31666/5723337-oml2016023-covcol.jpg"></img>
+                        <div class="populares__card___corpo">
+                            <div class="populares__card___cabecalho">
+                                <h5 class="populares__card___titulo">Wolverine</h5>
+                                <time class="populares__card___data" datetime="2003-08-01">08/2003</time>
+                            </div>
+                            <div class="populares__card___descricao">
+                                Marvel é uma série baseada em  quadrinhos da década de 40 nos Estados Unidos.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="populares__itens">
+                <div class="populares__info">
+                    <div class="populares__cabecalho">
+                        <h4 class="populares__titulo">
+                            <i class="populares__icone fas fa-list-ol"></i>
+                            Jogos da Marvel
+                        </h4>
+                        <button class="populares__botao">
+                            <i class="fas fa-th"></i>
+                            Visualizar os personagens
+                        </button>
+                    </div>
+                </div>
+                <div class="populares__conteudo">
+                    <div class="populares__card">
+                        <img class="populares__card___imagem" src="https://observatoriodocinema.bol.uol.com.br/wp-content/uploads/2019/09/cropped-hulk-1280x720.jpg"></img>
+                        <div class="populares__card___corpo">
+                            <div class="populares__card___cabecalho">
+                                <h5 class="populares__card___titulo">Amazing Hulk</h5>
+                                <time class="populares__card___data" datetime="2017-07-25">25/07/2017</time>
+                            </div>
+                            <div class="populares__card___descricao">
+                                Marvel Heroes foi um MMORPG que foi criado pela Marvel Comics em parceria com a Gazillion Entertainment. Antes, estava sendo elaborado pela Marvel Comics em parceria com a Cryptic Studios, com o nome de Marvel Universe Online.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="populares__card">
+                        <img class="populares__card___imagem" src="https://vignette.wikia.nocookie.net/powerlisting/images/1/10/Morris_Bench_Hydro-Man_%28Earth-616%29_from_Marvel_2-In-One_Vol_1_3_001.jpg/revision/latest?cb=20190105220030"></img>
+                        <div class="populares__card___corpo">
+                            <div class="populares__card___cabecalho">
+                                <h5 class="populares__card___titulo">Aqua Man </h5>
+                                <time class="populares__card___data" datetime="2017-03-23">23/03/2017</time>
+                            </div>
+                            <div class="populares__card___descricao">
+                                Aqua Man Marvel Comics, anteriormente Marvel Comics Group, é uma editora norte-americana e mídias relacionadas.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="populares__card">
+                        <img class="populares__card___imagem" src="https://i.annihil.us/u/prod/marvel/i/mg/6/a0/55b6a25e654e6/standard_xlarge.jpg"></img>
+                        <div class="populares__card___corpo">
+                            <div class="populares__card___cabecalho">
+                                <h5 class="populares__card___titulo">Iron Man</h5>
+                                <time class="populares__card___data" datetime="2012-08-21">21/08/2012</time>
+                            </div>
+                            <div class="populares__card___descricao">
+                                A Marvel Comics, anteriormente Marvel Comics Group, é uma editora norte-americana e mídias relacionadas. Hoje, a Marvel Comics é considerada a maior editora de histórias em quadrinhos do mundo.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="populares__card">
+                        <img class="populares__card___imagem" src="https://i.annihil.us/u/prod/marvel/i/mg/3/50/537ba56d31087/standard_xlarge.jpg"></img>
+                        <div class="populares__card___corpo">
+                            <div class="populares__card___cabecalho">
+                                <h5 class="populares__card___titulo">Capitain America</h5>
+                                <time class="populares__card___data" datetime="2009-10-27">27/10/2009</time>
+                            </div>
+                            <div class="populares__card___descricao">
+                                Marvel Comics
+                                A Marvel Comics, anteriormente Marvel Comics Group, é uma editora norte-americana e mídias relacionadas. Hoje, a Marvel Comics é considerada a maior editora de histórias em quadrinhos do mundo.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="populares__card">
+                        <img class="populares__card___imagem" src="https://i.annihil.us/u/prod/marvel/i/mg/5/c0/537ba730e05e0/standard_xlarge.jpg"></img>
+                        <div class="populares__card___corpo">
+                            <div class="populares__card___cabecalho">
+                                <h5 class="populares__card___titulo">Deadpool</h5>
+                                <time class="populares__card___data" datetime="2013-09-17">17/09/2013</time>
+                            </div>
+                            <div class="populares__card___descricao">                                
+                                A Marvel Comics, anteriormente Marvel Comics Group, é uma editora norte-americana e mídias relacionadas. Hoje, a Marvel Comics é considerada a maior editora de histórias em quadrinhos do mundo. Em 2009, a The Walt Disney Company, adquiriu a Marvel Entertainment.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="populares__itens">
+                <div class="populares__info">
+                    <div class="populares__cabecalho">
+                        <h4 class="populares__titulo">
+                            <i class="populares__icone far fa-bell"></i>
+                            Lançamentos
+                        </h4>
+                        <button class="populares__botao">
+                            <i class="fas fa-th"></i>
+                            Visualizar todos
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">Todos os direitos reservados &copy;</footer>
+    <script src="./assets/js/fontawesome.all.min.js"></script>
+    <script src="./assets/js/search.js"></script>
+    <script>
+        function myFunction() {
+          document.getElementById("frm1").submit();  }
+    </script>
+</body>
+</html>
